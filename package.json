@@ -1,0 +1,52 @@
+{
+	"name": "vite-plugin-just-svgo",
+	"version": "1.0.0",
+	"description": "Simple vite plugin for svg files optimization",
+	"author": "Andrey Sakharov <caxap_8787@mail.ru> (https://www.linkedin.com/in/andrey-sakharov/)",
+	"license": "MIT",
+	"type": "module",
+	"main": "index.cjs",
+	"module": "index.mjs",
+	"typings": "index.d.ts",
+	"exports": {
+		".": {
+			"require": "./index.cjs",
+			"import": "./index.mjs",
+			"types": "./index.d.ts"
+		}
+	},
+	"engines": {
+		"node": ">=18"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/muturgan/vite-plugin-just-svgo.git"
+	},
+	"keywords": [
+		"vite",
+		"vite-plugin",
+		"svgo",
+		"svg",
+		"optimize",
+		"minify"
+	],
+	"bugs": {
+		"url": "https://github.com/muturgan/vite-plugin-just-svgo/issues"
+	},
+	"homepage": "https://github.com/muturgan/vite-plugin-just-svgo#readme",
+	"files": [
+		"index.cjs",
+		"index.mjs",
+		"index.d.ts"
+	],
+	"dependencies": {
+		"svgo": "^3.0.2"
+	},
+	"peerDependencies": {
+		"vite": "^4.5.0"
+	},
+	"devDependencies": {
+		"@types/node": "^20.8.9",
+		"vite": "^4.5.0"
+	}
+}
