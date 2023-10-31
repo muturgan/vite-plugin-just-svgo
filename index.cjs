@@ -14,21 +14,9 @@ function justSvgo() {
 				: path.join(config.root, config.build.outDir);
 		},
 		closeBundle() {
-			return new Promise((resolve, reject) => {
-				const svgoPath = path.join(process.cwd(), 'node_modules', '.bin','svgo');
-				cp.exec(
-					`${svgoPath} -f ${outputPath} -r --multipass`,
-					(err, stdout) => {
-						if (err) {
-							reject(err);
-						}
-						else {
-							console.log(stdout);
-							resolve();
-						}
-					},
-				);
-			});
+			const svgoPath = path.join(process.cwd(), 'node_modules', '.bin','svgo');
+			const result = cp.execSync(`${svgoPath} -f ${outputPath} -r --multipass`);
+			console.log(result.toString());
 		},
 	};
 }
