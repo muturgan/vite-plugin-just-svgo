@@ -1,5 +1,5 @@
 # vite-plugin-just-svgo
-Simple vite plugin for svg files optimization. Compatible with any frontend framework.  
+Simple [vite](https://vitejs.dev) plugin for svg files optimization. Compatible with any frontend framework.  
 Just optimize all svg files in an outDir folder via [svgo](https://github.com/svg/svgo). Nothing more.
 
 ```js
