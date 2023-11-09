@@ -15,8 +15,8 @@ function justSvgo() {
 		},
 		closeBundle() {
 			const svgoPath = path.join(process.cwd(), 'node_modules', '.bin','svgo');
-			const result = cp.execSync(`${svgoPath} -f ${outputPath} -r --multipass`);
-			console.log(result.toString());
+			const result = cp.spawnSync(svgoPath, ['-f', outputPath, '-r', '--multipass']);
+			console.log(result.output.toString());
 		},
 	};
 }

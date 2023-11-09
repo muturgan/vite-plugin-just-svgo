@@ -8,6 +8,6 @@ import { defineConfig } from 'vite';
 import justSvgo from 'vite-plugin-just-svgo';
 
 export default defineConfig({
-	plugins: [justSvgo()],
+   plugins: [justSvgo()],
 });
 ```

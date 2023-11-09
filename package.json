@@ -1,6 +1,6 @@
 {
 	"name": "vite-plugin-just-svgo",
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"description": "Simple vite plugin for svg files optimization",
 	"author": "Andrey Sakharov <caxap_8787@mail.ru> (https://www.linkedin.com/in/andrey-sakharov/)",
 	"license": "MIT",
